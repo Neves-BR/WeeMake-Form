@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { Download, Eye, EyeOff } from 'lucide-react';
+import { useSupabaseBriefing } from '../hooks/useSupabaseBriefing';
 
 // Movidos para fora do componente para evitar recriação desnecessária e problemas com dependências de Hooks
 const industries = [
