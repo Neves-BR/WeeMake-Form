@@ -201,7 +201,7 @@ export const autoSaveBriefing = async (id, briefingData) => {
  */
 export const checkSupabaseConnection = async () => {
   try {
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('briefings')
       .select('count()', { count: 'exact' });
 
