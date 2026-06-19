@@ -254,7 +254,7 @@ const WeeMakeForm = () => {
   }, [formData]);
 
     const omnacoesBriefing = useMemo(() => generateOmnacoes(), [generateOmnacoes]);
-    const exportBriefing = () => {
+    const exportBriefing = async () => {
       
       const result = await onSave(formData);
         if (!result.success) {
